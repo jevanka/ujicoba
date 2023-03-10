@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jevanka Web Link</title>
+    <style>
+        html, body, * {
+            padding: 0;
+            margin: 0;
+            font-family: monospace;
+        }
+        .box-terluar {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 1000px;
+            height: 100vh;
+            margin:0 auto;
+            background-image: url("gambar1.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .box-saya {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgb(255, 255, 255);
+            padding-bottom: 30px;
+        }
+        .box-saya img {
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+            margin-bottom: 50px;
+        }
+        .box-link {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            gap: 10px;
+        }
+        .box-link button {
+            background-color: white;
+            border: none;
+            padding: 8px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 400ms ease-in-out;
+        }
+        .box-link button:hover {
+            background-color: #333333;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+  </head>
+  <body>
+    <div class="box-terluar">
+      <div class="box-saya">
+        <img src="saya.png" />
+        <h1>epann skuy</h1>
+        <p>✨ Cah Magang ✨</p>
+      </div>
+      <div class="box-link">
+        <button onclick="hayu('https://instagram.com/epannskuy?igshid=ZDdkNTZiNTM=')">Instagram</button>
+        <button onclick="hayu('http://tiktok.com/@epandisinii')">Tiktok</button>
+        <button onclick="hayu('https://wa.me/085731732847')">WhatsApp</button>
+
+      </div>
+    </div>
+    <script>
+        function hayu(kemana) {
+           window.open(kemana)
+        }
+    </script>
+  </body>
+</html>
